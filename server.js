@@ -5,7 +5,7 @@ const Article = require('./models/article')
 const articleRouter = require('./routes/articles')
 const app = express()
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0.56dsv.mongodb.net/test?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://admin:<psw>@cluster0.56dsv.mongodb.net/test?retryWrites=true&w=majority',
  { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, ()=>{
     console.log('connected to database')
 })
